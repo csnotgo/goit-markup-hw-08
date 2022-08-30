@@ -480,7 +480,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: -15px;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -488,7 +488,6 @@ span {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
-    gap: 30px;
   }
 }
 
@@ -511,7 +510,7 @@ span {
 }
 @media screen and (min-width: 768px) {
   .features-list__item:not(:last-child) {
-    margin: 15px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {

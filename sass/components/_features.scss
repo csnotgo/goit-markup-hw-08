@@ -10,13 +10,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: -15px;
+    gap: 30px;
   }
   @include desktop {
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
-    gap: 30px;
   }
 }
 
@@ -36,7 +35,7 @@
   margin-bottom: 30px;
 
   @include tablet {
-    margin: 15px;
+    margin: 0;
   }
 
   @include desktop {
