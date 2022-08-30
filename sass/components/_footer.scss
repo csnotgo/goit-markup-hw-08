@@ -1,0 +1,249 @@
+/* футер */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer__container {
+  padding: 60px 0;
+  text-align: center;
+
+  @include tablet {
+    padding: 60px 89px 60px 76px;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    padding: 60px 15px;
+  }
+}
+
+.tablet-footer {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    gap: 70px;
+  }
+}
+
+.footer__box {
+  @include tablet {
+    text-align: center;
+    width: 232px;
+  }
+  @include desktop {
+    width: 231px;
+    text-align: left;
+  }
+}
+
+.logo__footer {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-family: Raleway;
+  font-size: 24px;
+  line-height: 1.16;
+  text-decoration: none;
+  color: var(--primary-white-color);
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+.address {
+  margin-bottom: 60px;
+  @include tablet {
+    margin: 0;
+  }
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 8px;
+  @include desktop {
+    margin-top: 9px;
+  }
+}
+
+.address__link {
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  color: var(--primary-white-color);
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__mail,
+.address__number {
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__mail:hover,
+.address__mail:focus {
+  color: var(--accent-color);
+}
+
+.address__number:hover,
+.address__number:focus {
+  color: var(--accent-color);
+}
+
+.footer-box {
+  margin-bottom: 60px;
+  @include tablet {
+    margin: 0;
+  }
+}
+
+.footer-box__text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.social-list--no-padding {
+  padding: 0;
+}
+
+.social-list__link--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-list__icon {
+  fill: currentColor;
+}
+
+/* форма у футері */
+
+.footer-form {
+  @include desktop {
+    margin-left: 93px;
+  }
+}
+
+.footer-form__title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #ffffff;
+  @include desktop {
+    text-align: start;
+  }
+}
+
+.form-box {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form-box__input {
+  margin-bottom: 20px;
+  padding-left: 16px;
+  min-width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: #ffffff;
+  background-color: transparent;
+
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    outline-color: var(--accent-color);
+  }
+  @include tablet {
+    margin-bottom: 20px;
+    min-width: 450px;
+  }
+
+  @include desktop {
+    margin-right: 12px;
+    margin-bottom: 0;
+    min-width: 358px;
+  }
+}
+
+.buttons--with-icon {
+  position: relative;
+  min-height: 50px;
+  min-width: 200px;
+  padding-right: 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: start;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+
+.footer-form__icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+}

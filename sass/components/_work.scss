@@ -1,0 +1,52 @@
+/* секція чим ми займаємось */
+.work {
+  padding-top: 47px;
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.work__title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-list .work-list__item + .work-list__item {
+  margin-left: 30px;
+}
+
+.work-list .work-list__item {
+  position: relative;
+}
+
+.work-list__box {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work-list__description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}

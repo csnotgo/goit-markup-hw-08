@@ -1,0 +1,96 @@
+/* секція героя */
+.hero {
+  max-width: 767px;
+  min-height: 400px;
+  padding-top: 118px;
+
+  background-image: var(--bg-gradient), url(../images/hero.mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2f303a;
+  text-align: center;
+  @include retina {
+    background-image: var(--bg-gradient), url(../images/hero.mobx2.jpg);
+  }
+
+  @include tablet {
+    max-width: 1199px;
+    min-height: 400px;
+    padding-top: 118px;
+    background-image: var(--bg-gradient), url(../images/hero.tab.jpg);
+    @include retina {
+      background-image: var(--bg-gradient), url(../images/hero.tabx2.jpg);
+    }
+  }
+  @include desktop {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--bg-gradient), url(../images/hero.jpg);
+    @include retina {
+      background-image: var(--bg-gradient), url(../images/herox2.jpg);
+    }
+  }
+}
+
+.hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include desktop {
+    width: 696px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 30px;
+
+  font-size: 26px;
+  line-height: 1.61;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+
+  @include desktop {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.buttons {
+  padding: 10px 24px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid transparent;
+    color: var(--primary-white-color);
+    background-color: #188ce8;
+  }
+}
