@@ -41,10 +41,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  width: 360px;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  // width: 360px;
+  // margin-left: auto;
+  // margin-right: auto;
 
   @include desktop {
     width: 696px;

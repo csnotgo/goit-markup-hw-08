@@ -29,9 +29,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+  @include mobile {
+    width: 480px;
+  }
 
   @include tablet {
-    width: 100%;
+    width: 768px;
   }
 
   @include desktop {
